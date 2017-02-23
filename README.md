@@ -1,10 +1,13 @@
 # Bin-file-reader
+
+COSC 3327 Assignment
+
 Java method to read .bin files and output several conversions.
 
 This java method performs the following actions:
 
 
-1. Open a .bin file
+1. Open a .bin filename provided by user
 2. Read a 32-bit number from the file
 3. Display the 32-bit binary number including leading zeroes
 4. Display the 8-digit hexadecimal conversion including leading zeroes
