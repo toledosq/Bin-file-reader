@@ -1,12 +1,9 @@
 import java.io.*;
 
-
 public class ReadBinaryFile {
 
     public static void readFile(String file)
-
             throws IOException
-
     {
         int number; // A number read from the file
         String bin_string;
@@ -55,11 +52,7 @@ public class ReadBinaryFile {
 
                 // Print output
                 System.out.printf(bin_string);
-                System.out.printf("\t %08x", number);
-                System.out.printf("%10d", bit_21_16_int);
-                System.out.printf("\t");
-                System.out.println(bit_15_0_int);
-
+                System.out.printf("\t %08x \t %10d \t %10d \n", number, bit_21_16_int, bit_15_0_int);
             }
             catch (EOFException e)
             {
