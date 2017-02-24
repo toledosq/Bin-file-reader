@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class readBinaryFile {
+public class ReadBinaryFile {
 
     public static void readFile(String file)
             throws IOException
@@ -21,7 +21,8 @@ public class readBinaryFile {
         // Read the contents of the file.
         while (!endOfFile)
         {
-            try {
+            try
+            {
                 // Retrieve binary number from file
                 number = inputFile.readInt();
                 // Convert the binary number to String for printing
@@ -51,12 +52,10 @@ public class readBinaryFile {
 
                 // Print output
                 System.out.printf(bin_string);
-                System.out.printf("\t %08x", number);
-                System.out.printf("%10d", bit_21_16_int);
-                System.out.printf("\t");
-                System.out.println(bit_15_0_int);
-
-            } catch (EOFException e) {
+                System.out.printf("\t %08x \t %10d \t %10d \n", number, bit_21_16_int, bit_15_0_int);
+            }
+            catch (EOFException e)
+            {
                 endOfFile = true;
             }
         }
