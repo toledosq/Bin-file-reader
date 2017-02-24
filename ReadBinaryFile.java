@@ -1,7 +1,7 @@
 import java.io.*;
 
 
-public class readBinaryFile {
+public class ReadBinaryFile {
 
     public static void readFile(String file)
 
